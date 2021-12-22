@@ -28,4 +28,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           
-
+      - name: Setup node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 11.9.0
