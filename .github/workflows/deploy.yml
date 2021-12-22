@@ -28,7 +28,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           
-      - name: Setup node 12
-        uses: actions/setup-node@v1
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.0
         with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
           node-version: 11.9.0
+          # File containing the version Spec of the version to use.  Examples: .nvmrc, .node-version
+          
